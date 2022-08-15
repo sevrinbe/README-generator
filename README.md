@@ -22,7 +22,7 @@
   
   The use of this project is to use a CLA to type answer reponses so a quality professional readme can be used for your projects.
   
-  ![image](screenshots/screenshot.png)
+  ![image](./screenshots/screenshot.png)
 
   ## Starting the Program
 
