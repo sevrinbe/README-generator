@@ -129,7 +129,7 @@ function generateMarkdown(data) {
   
   ${data.usageInput}
   
-  To add a screenshot, create an  folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+  To add a screenshot, create an  folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README.
 
   ## Starting the Program
 
