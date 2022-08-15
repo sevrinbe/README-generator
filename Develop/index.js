@@ -38,24 +38,25 @@ const questions = [
     {
         type: "list",
         message: "Which license do you want to use?",
-        choices: ["MIT", "Apache License 2.0", "GNU General Public License v3.0", "BSD 2-Clause 'Simplified' License" ],
+        choices: ["MIT", "Apache License 2.0", "Unlicense", "BSD 2-Clause 'Simplified' License", "None" ],
         name: "licenseType",
     },
 ];
 
-var answers = [];
-
-var metaQuestions = [];
-
-
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    console.log("dicks")
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.log(err) : console.log("Success!"));
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then((responses) => {
-        generateMarkdown(responses);
+        var markDown = generateMarkdown(responses);
+        console.log(markDown);
+        writeToFile("README.md", markDown);
     });
 }
 
